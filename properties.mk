@@ -213,6 +213,10 @@ persist.vendor.dpm.feature=1 \
 persist.vendor.dpm.nsrm.bkg.evt=3955 \
 persist.vendor.dpmhalservice.enable=1
 
+# Fastbootd
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.fastbootd.available=true
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
