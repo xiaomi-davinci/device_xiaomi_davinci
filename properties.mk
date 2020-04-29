@@ -264,13 +264,13 @@ persist.vendor.radio.procedure_bytes=SKIP \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.redir_party_num=1 \
 persist.vendor.radio.report_codec=1 \
-persist.vendor.radio.sib16_support=1
+persist.vendor.radio.sib16_support=1 \
+ro.telephony.default_network=22,22
 
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.radio.multisim.config=dsds \
 ril.subscription.types=RUIM \
 ro.telephony.default_cdma_sub=0 \
-ro.telephony.default_network=22,22 \
 telephony.lteOnCdmaDevice=1
 
 # RCS
