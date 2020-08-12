@@ -264,6 +264,10 @@ persist.mm.enable.prefetch=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.netflix.bsp_rev=Q6150-17263-1
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # QC framework value-adds
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.qti.va_aosp.support=1
