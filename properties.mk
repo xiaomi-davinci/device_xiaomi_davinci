@@ -205,9 +205,11 @@ persist.sys.sf.color_mode=9
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.dpm.feature=1 \
-persist.vendor.dpm.nsrm.bkg.evt=3955 \
 persist.vendor.dpmhalservice.enable=1
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+persist.vendor.dpm.feature=1 \
+persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # Fastbootd
 PRODUCT_SYSTEM_PROPERTIES += \
