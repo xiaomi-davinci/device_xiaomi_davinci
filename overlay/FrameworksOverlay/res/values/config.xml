@@ -572,4 +572,7 @@
 
     <!-- Shows the required view for Screen OFF FOD -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
+
+    <!-- Whether to use light sensor to evaluate pocket state -->
+    <bool name="config_pocketUseLightSensor">false</bool>
 </resources>
