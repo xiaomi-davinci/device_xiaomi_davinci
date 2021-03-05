@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlay \
     ApertureDevOverlay \
     CarrierConfigOverlay \
+    FaceUnlockServiceOverlay \
     FrameworksOverlay \
     LineageSDKOverlay \
     SettingsOverlay \
