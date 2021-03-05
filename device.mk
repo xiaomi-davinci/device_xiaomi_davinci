@@ -287,6 +287,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureOverlay \
     CarrierConfigOverlay \
+    FaceUnlockServiceOverlay \
     FrameworksOverlay \
     LineageSDKOverlay \
     SettingsOverlay \
