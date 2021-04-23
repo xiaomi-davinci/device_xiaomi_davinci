@@ -13,6 +13,7 @@ persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicecomm=true \
 persist.vendor.audio.fluence.voicerec=false \
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
 persist.vendor.audio.ras.enabled=false \
 persist.vendor.audio.spv3.enable=true \
 ro.af.client_heap_size_kbyte=7168 \
