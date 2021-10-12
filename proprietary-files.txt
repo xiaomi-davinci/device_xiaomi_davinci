@@ -440,12 +440,14 @@ vendor/etc/init/qseecomd.rc
 -vendor/lib64/libhdcpsrm.so
 -vendor/lib64/libminkdescriptor.so
 -vendor/lib64/libminksocket.so
--vendor/lib64/liboemcrypto.so
 -vendor/lib64/libops.so
 -vendor/lib64/libqisl.so
 -vendor/lib64/librpmb.so
 -vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
+
+# DRM - From davinci V12.1.4.0.RFJMIXM-release-keys
+-vendor/lib64/liboemcrypto.so|6b8c5ab8cb16b7f42071ddc59ac868fa684cff4e
 
 # DRM widevine
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
