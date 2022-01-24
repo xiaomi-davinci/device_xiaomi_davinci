@@ -65,6 +65,7 @@ on init
     write /proc/sys/vm/page-cluster 0
 
 on fs
+    chown media audio /mnt/vendor/persist/audio
     mount_all /vendor/etc/fstab.qcom --early
 
     restorecon_recursive /mnt/vendor/persist
