@@ -160,6 +160,14 @@ persist.vendor.data.iwlan.enable=true \
 persist.vendor.data.mode=concurrent \
 ro.telephony.iwlan_operation_mode=legacy
 
+# Dex2oat
+PRODUCT_PRODUCT_PROPERTIES += \
+dalvik.vm.dex2oat64.enabled=true \
+dalvik.vm.image-dex2oat-filter=speed \
+dalvik.vm.image-dex2oat-threads=8 \
+dalvik.vm.dex2oat-filter=speed \
+dalvik.vm.dex2oat-threads=8
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.disable_client_composition_cache=1 \
