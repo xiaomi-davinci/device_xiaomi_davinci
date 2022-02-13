@@ -157,7 +157,6 @@ ro.telephony.iwlan_operation_mode=legacy
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
 debug.mdpcomp.logs=0 \
-debug.sf.disable_backpressure=1 \
 debug.sf.disable_client_composition_cache=1 \
 debug.sf.use_phase_offsets_as_durations=1 \
 debug.sf.late.sf.duration=10500000 \
