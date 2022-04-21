@@ -575,4 +575,7 @@
 
     <!-- Whether to use light sensor to evaluate pocket state -->
     <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Exempt ImsService from privacy (location) indicators -->
+    <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
 </resources>
