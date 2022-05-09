@@ -88,6 +88,9 @@ vendor.audio.use.sw.ape.decoder=true \
 vendor.audio.volume.headset.gain.depcal=true \
 vendor.voice.path.for.pcm.voip=false
 
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.audio.spatializer_enabled=true
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.device.class_of_device=90,2,12 \
