@@ -88,6 +88,9 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libshoebox.so
 -vendor/lib64/soundfx/libdirac.so
 
+# Audio (FX modules) - from cheetah-tq3a.230605.012
+-vendor/lib/soundfx/libspatialaudio.so|b26727b8887dad56f5e183f7145487c88bd2f065
+
 # Audio libraries
 -vendor/lib/btaudio_offload_if.so
 -vendor/lib/libadm.so
