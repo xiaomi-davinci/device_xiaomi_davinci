@@ -307,6 +307,12 @@ persist.rcs.supported=1
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.recovery.ui.margin_height=48
 
+# Suspend properties
+PRODUCT_PROPERTY_OVERRIDES += \
+suspend.short_suspend_threshold_millis=2000 \
+suspend.short_suspend_backoff_enabled=true \
+suspend.max_sleep_time_millis=40000
+
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.aware.interface=wifi-aware0
