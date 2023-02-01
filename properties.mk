@@ -117,7 +117,8 @@ vendor.bluetooth.soc=cherokee
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-camera.disable_zsl_mode=1
+camera.disable_zsl_mode=1 \
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,tw.nekomimi.nekogram,org.telegram.plus
 
 # Charger
 PRODUCT_SYSTEM_PROPERTIES += \
