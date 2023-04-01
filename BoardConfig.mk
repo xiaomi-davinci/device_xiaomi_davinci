@@ -99,11 +99,19 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += cgroup_disable=pressure
+KERNEL_LD := LD=ld.lld
 
 # Enable DTB in bootimage and set header version
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+
+# Set kernel clang
+TARGET_KERNEL_CLANG_COMPILE := true
+KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_CLANG_VERSION := playground
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-playground
+TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LD=ld.lld LLVM=1 LLVM_IAS=1
 
 # Media
 TARGET_USES_ION := true
