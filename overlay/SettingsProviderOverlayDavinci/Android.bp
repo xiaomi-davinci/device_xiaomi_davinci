@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "SettingsProviderOverlayDavinci",
+    theme: "SettingsProviderOverlayDavinci",
+    sdk_version: "current",
+    vendor: true,
+}
