@@ -1,4 +1,4 @@
-Copyright (C) 2021 The LineageOS Project
+Copyright (C) 2020-2023 The LineageOS Project
 
 Device configuration for Xiaomi Mi 9T/Redmi K20
 =========================================
