@@ -92,25 +92,25 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/btaudio_offload_if.so
 -vendor/lib/libadm.so
 -vendor/lib/libqtigef.so
--vendor/lib/liba2dpoffload.so
+-vendor/lib/liba2dpoffload.so;MODULE=liba2dpoffload_vendor
 -vendor/lib/libaudioalsa.so
 -vendor/lib/libaudioconfigstore.so
 -vendor/lib/libaudioparsers.so
--vendor/lib/libbatterylistener.so
--vendor/lib/libcirrusspkrprot.so
--vendor/lib/libcomprcapture.so
+-vendor/lib/libbatterylistener.so;MODULE=libbatterylistener_vendor
+-vendor/lib/libcirrusspkrprot.so;MODULE=libcirrusspkrprot_vendor
+-vendor/lib/libcomprcapture.so;MODULE=libcomprcapture_vendor
 -vendor/lib/libdrc.so
--vendor/lib/libexthwplugin.so
--vendor/lib/libhdmiedid.so
--vendor/lib/libhdmipassthru.so
--vendor/lib/libhfp.so
--vendor/lib/libsndmonitor.so
--vendor/lib/libspkrprot.so
--vendor/lib/libssrec.so
+-vendor/lib/libexthwplugin.so;MODULE=libexthwplugin_vendor
+-vendor/lib/libhdmiedid.so;MODULE=libhdmiedid_vendor
+-vendor/lib/libhdmipassthru.so;MODULE=libhdmipassthru_vendor
+-vendor/lib/libhfp.so;MODULE=libhfp_vendor
+-vendor/lib/libsndmonitor.so;MODULE=libsndmonitor_vendor
+-vendor/lib/libspkrprot.so;MODULE=libspkrprot_vendor
+-vendor/lib/libssrec.so;MODULE=libssrec_vendor
 -vendor/lib/libsurround_3mic_proc.so
 
 # Audio (Hardware)
--vendor/lib/hw/audio.primary.sm6150.so
+-vendor/lib/hw/audio.primary.sm6150.so;MODULE=audio.primary.sm6150_vendor
 -vendor/lib/vndk/libxlog.so
 -vendor/lib/libaudio_log_utils.so
 -vendor/lib/libaudioroute_ext.so
@@ -273,7 +273,7 @@ vendor/etc/camera/eyelineblush.cng
 -vendor/lib64/libarcsoft_portrait_lighting_c.so
 -vendor/lib64/libarcsoft_preview_deflicker.so
 -vendor/lib64/libarcsoft_supernight.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase_vendor
 -vendor/lib64/libtriplecam_video_optical_zoom.so
 
 # Camera face detection
