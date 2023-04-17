@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.1.0.TKFMIXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.2.0.TKFMIXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -88,6 +88,7 @@ system_ext/framework/audiosphere.jar
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 -vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 -vendor/lib/libbluetooth_audio_session_qti.so
 -vendor/lib/libbluetooth_audio_session_qti_2_1.so
@@ -97,6 +98,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 -vendor/lib64/libbtnv.so
 -vendor/lib64/libsoc_helper.so
+-vendor/lib64/libbt-hidlclient.so
 -vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 -vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
@@ -319,6 +321,7 @@ vendor/app/IWlanService/IWlanService.apk
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
 vendor/etc/init/cnd.rc
+vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 -vendor/lib64/libcne.so
 -vendor/lib64/libcneapiclient.so
 -vendor/lib64/libcneoplookup.so
@@ -552,6 +555,7 @@ vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -system_ext/lib64/libimsmedia_jni.so
 -system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
+-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE=vendor.qti.imsrtpservice@3.1_system_ext
 system_ext/priv-app/ims/ims.apk|6a383ab360468c2b040c4ce618ac5188ab4fc655
 -vendor/bin/ims_rtp_daemon
 -vendor/bin/imsdatadaemon
@@ -628,6 +632,11 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 -vendor/lib/libsmwrapper.so
 
 # Media
+-system_ext/lib/libmmrtpdecoder.so
+-system_ext/lib/libmmrtpencoder.so
+-system_ext/lib64/libmmparser_lite.so
+-system_ext/lib64/libmmrtpdecoder.so
+-system_ext/lib64/libmmrtpencoder.so
 -vendor/bin/hw/vendor.qti.media.c2@1.0-service
 -vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
@@ -635,6 +644,9 @@ vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
+-vendor/lib/libFileMux_proprietary.so
+-vendor/lib/libAlacSwDec.so
+-vendor/lib/libApeSwDec.so
 -vendor/lib/libMpeg4SwEncoder.so
 -vendor/lib/libOmxAacDec.so
 -vendor/lib/libOmxAlacDec.so
@@ -645,13 +657,17 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libOmxApeDecSw.so
 -vendor/lib/libOmxDsdDec.so
 -vendor/lib/libOmxEvrcDec.so
+-vendor/lib/libOmxG711Dec.so
 -vendor/lib/libOmxQcelp13Dec.so
 -vendor/lib/libOmxSwVdec.so
 -vendor/lib/libOmxSwVencMpeg4.so
+-vendor/lib/libOmxVideoDSMode.so
 -vendor/lib/libOmxVpp.so
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
 -vendor/lib/libmmosal.so;MODULE=libmmosal_vendor
+-vendor/lib/libmmrtpdecoder_proprietary.so
+-vendor/lib/libmmrtpencoder_proprietary.so
 -vendor/lib/libqcodec2.so
 -vendor/lib/libswvdec.so
 -vendor/lib/libvppclient.so
