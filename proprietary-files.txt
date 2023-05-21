@@ -42,6 +42,8 @@ vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
+vendor/lib/rfsa/adsp/misound_res_headphone.bin
+vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -78,12 +80,40 @@ vendor/firmware/tfa98xx.cnt
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
+-vendor/lib/soundfx/libdirac.so
+-vendor/lib/soundfx/libqcbassboost.so
+-vendor/lib/soundfx/libqcreverb.so
+-vendor/lib/soundfx/libqcvirt.so
+-vendor/lib/soundfx/libmisoundfx.so
 -vendor/lib/soundfx/libshoebox.so
+-vendor/lib64/soundfx/libdirac.so
 
 # Audio libraries
 -vendor/lib/btaudio_offload_if.so
 -vendor/lib/libadm.so
 -vendor/lib/libqtigef.so
+-vendor/lib/liba2dpoffload.so
+-vendor/lib/libaudioalsa.so
+-vendor/lib/libaudioconfigstore.so
+-vendor/lib/libaudioparsers.so
+-vendor/lib/libbatterylistener.so
+-vendor/lib/libcirrusspkrprot.so
+-vendor/lib/libcomprcapture.so
+-vendor/lib/libdrc.so
+-vendor/lib/libexthwplugin.so
+-vendor/lib/libhdmiedid.so
+-vendor/lib/libhdmipassthru.so
+-vendor/lib/libhfp.so
+-vendor/lib/libsndmonitor.so
+-vendor/lib/libspkrprot.so
+-vendor/lib/libssrec.so
+-vendor/lib/libsurround_3mic_proc.so
+
+# Audio (Hardware)
+-vendor/lib/hw/audio.primary.sm6150.so
+-vendor/lib/vndk/libxlog.so
+-vendor/lib/libaudio_log_utils.so
+-vendor/lib/libaudioroute_ext.so
 
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -644,8 +674,19 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 
 # Listen
 -vendor/lib/libadpcmdec.so
--vendor/lib/librice.so
 -vendor/lib/libsmwrapper.so
+-vendor/lib/libgcs-calwrapper.so
+-vendor/lib/libgcs-ipc.so
+-vendor/lib/libgcs-osal.so
+-vendor/lib/libgcs.so
+-vendor/lib/liblistensoundmodel2.so
+-vendor/lib/libmulawdec.so
+-vendor/lib64/libgcs-calwrapper.so
+-vendor/lib64/libgcs-ipc.so
+-vendor/lib64/libgcs-osal.so
+-vendor/lib64/libgcs.so
+-vendor/lib64/liblistensoundmodel2.so
+-vendor/lib64/libmulawdec.so
 
 # Media
 -system_ext/lib/libmmrtpdecoder.so

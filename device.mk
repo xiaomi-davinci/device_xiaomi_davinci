@@ -43,8 +43,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.usb.default \
-    audio.r_submix.default \
-    sound_trigger.primary.sm6150
+    audio.r_submix.default
 
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
@@ -55,28 +54,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libaudio-resampler
 
-PRODUCT_PACKAGES += \
-    audio.primary.sm6150 \
-    audio_amplifier.sm6150
-
-PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor \
-    libspkrprot
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
-    frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
-    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
