@@ -255,6 +255,7 @@ ro.vendor.qti.va_odm.support=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
+persist.radio.multisim.config=dsds \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.data_ltd_sys_ind=1 \
@@ -268,16 +269,15 @@ persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.redir_party_num=1 \
 persist.vendor.radio.report_codec=1 \
 persist.vendor.radio.sib16_support=1 \
-ro.telephony.default_network=22,22
-
-PRODUCT_SYSTEM_PROPERTIES += \
-persist.radio.multisim.config=dsds \
-ril.subscription.types=RUIM \
 ro.telephony.default_cdma_sub=0 \
+ro.telephony.default_network=22,22 \
 telephony.lteOnCdmaDevice=1
 
-# RCS
 PRODUCT_SYSTEM_PROPERTIES += \
+ril.subscription.types=RUIM
+
+# RCS
+PRODUCT_PROPERTY_OVERRIDES += \
 persist.rcs.supported=1
 
 # Recovery
