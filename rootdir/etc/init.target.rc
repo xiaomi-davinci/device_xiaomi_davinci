@@ -66,7 +66,7 @@ on init
 
 on fs
     chown media audio /mnt/vendor/persist/audio
-    mount_all /vendor/etc/fstab.qcom --early
+    mount_all --early
 
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
@@ -76,7 +76,7 @@ on fs
 on late-fs
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
-    mount_all /vendor/etc/fstab.qcom --late
+    mount_all --late
 
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
