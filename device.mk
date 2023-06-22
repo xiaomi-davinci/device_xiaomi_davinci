@@ -201,6 +201,7 @@ PRODUCT_PACKAGES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
+    fstab.qcom_ramdisk \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
@@ -309,6 +310,10 @@ PRODUCT_PACKAGES += \
     SystemUIOverlay \
     TelephonyOverlay \
     WifiOverlay
+
+# Partitions
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
