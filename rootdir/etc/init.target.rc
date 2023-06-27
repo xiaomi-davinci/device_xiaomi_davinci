@@ -48,15 +48,6 @@ on init
     chmod 0660 /dev/drv8846_dev
     chmod 0660 /dev/akm09970
 
-on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku davinci
-
-on init && property:ro.boot.hwc=CN
-    setprop ro.boot.product.hardware.sku davinci
-
-on property:ro.boot.product.hardware.sku=davinci
-    enable vendor.nfc_hal_service
-
     # Boot time fs tuning
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
@@ -229,6 +220,9 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     writepid /dev/cpuset/system-background/tasks
     disabled
+
+on boot && property:ro.boot.product.hardware.sku=nfc
+    enable vendor.nfc_hal_service
 
 service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
     class hal
